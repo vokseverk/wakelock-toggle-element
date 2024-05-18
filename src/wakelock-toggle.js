@@ -33,10 +33,6 @@ class WakelockToggle extends HTMLElement {
 		this.appendChild(switcher)
 	}
 
-	attributeChangedCallback(name, oldValue, newValue) {
-		console.log(`Attribute ${name} has changed from ${oldValue} to ${newValue}.`)
-	}
-
 	get switcherElement() {
 		return this.querySelector('input')
 	}
